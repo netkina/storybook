@@ -28,6 +28,10 @@
 				control: { type: 'select' },
 				options: ['small', 'medium', 'large'],
 				description: 'Размер кнопки'
+			},
+			disabled: {
+				control: 'boolean',
+				description: 'Отключённое состояние кнопки'
 			}
 		},
 		args: {
@@ -35,7 +39,8 @@
 			label: 'Button',
 			primary: true,
 			outlined: false,
-			size: 'medium'
+			size: 'medium',
+			disabled: false
 		}
 	});
 </script>
@@ -76,6 +81,15 @@
 <!-- С пользовательским цветом фона -->
 <Story name="Custom Background">
 	<Button label="Custom Color" backgroundColor="#6366f1" />
+</Story>
+
+<!-- Отключённое состояние -->
+<Story name="Disabled">
+	<div style="display: flex; gap: 12px; flex-wrap: wrap;">
+		<Button label="Disabled Primary" primary={true} disabled={true} />
+		<Button label="Disabled Secondary" primary={false} disabled={true} />
+		<Button label="Disabled Outlined" outlined={true} disabled={true} />
+	</div>
 </Story>
 
 <!-- Все варианты вместе -->
