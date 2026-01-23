@@ -1,0 +1,184 @@
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    background: white;
+    transition: background-color 0.2s ease;
+  }
+
+  .list-item:hover {
+    background-color: #f8f9fa;
+  }
+
+  .list-item.TASK_PINNED {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffc107;
+  }
+
+  .list-item.TASK_ARCHIVED {
+    opacity: 0.6;
+    background-color: #f5f5f5;
+  }
+
+  /* Checkbox container */
+  .checkbox {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  /* Hide default checkbox */
+  .checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* Custom checkbox */
+  .checkbox-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 2px solid #757575;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkbox-custom:hover {
+    border-color: #2196f3;
+    background-color: #e3f2fd;
+  }
+
+  /* Checkbox checked state */
+  .checkbox input[type="checkbox"]:checked + .checkbox-custom {
+    background-color: #2196f3;
+    border-color: #2196f3;
+  }
+
+  .checkbox input[type="checkbox"]:checked + .checkbox-custom::after {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* Disabled checkbox */
+  .checkbox input[type="checkbox"]:disabled + .checkbox-custom {
+    background-color: #e0e0e0;
+    border-color: #bdbdbd;
+    cursor: not-allowed;
+  }
+
+  /* Title input */
+  .title {
+    flex: 1;
+    margin-right: 16px;
+  }
+
+  .title input {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 4px;
+    color: #212121;
+    transition: border-color 0.2s ease;
+  }
+
+  .title input:focus {
+    outline: none;
+    border-color: #2196f3;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+  }
+
+  .list-item.TASK_ARCHIVED .title input {
+    text-decoration: line-through;
+    color: #757575;
+  }
+
+  /* Pin button */
+  .pin-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #757575;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pin-button:hover {
+    color: #ffc107;
+    background-color: rgba(255, 193, 7, 0.1);
+  }
+
+  .pin-button:active {
+    transform: scale(0.95);
+  }
+
+  .pin-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.3);
+  }
+
+  /* Star icon */
+  .icon-star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .list-item.TASK_PINNED .pin-button {
+    color: #ffc107;
+  }
+
+  /* Accessibility improvements */
+  .checkbox-custom:focus-visible,
+  .pin-button:focus-visible {
+    outline: 2px solid #2196f3;
+    outline-offset: 2px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .list-item {
+      padding: 10px 12px;
+    }
+    
+    .checkbox {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+    }
+    
+    .checkbox-custom {
+      width: 20px;
+      height: 20px;
+    }
+    
+    .title input {
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+  }

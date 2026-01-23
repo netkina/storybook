@@ -1,18 +1,11 @@
 import type { Preview } from '@storybook/sveltekit';
 import 'tailwindcss'
-import '../src/lib/components/ui/button2/button2.css'
+import '../src/lib/components/ui/button2/button2.css';
+import '../src/app.css';
+import '../src/index.css'
 
 const preview: Preview = {
 	parameters: {
-		backgrounds: {
-			default: 'dark',
-			values: [
-				{
-					name: 'dark',
-					value: '#c57f7f'
-				}
-			]
-		},
 		controls: {
 			matchers: {
 				color: /(background|color)$/i,

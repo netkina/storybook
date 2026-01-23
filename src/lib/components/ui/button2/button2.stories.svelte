@@ -21,27 +21,48 @@
 </script>
 
 <Story
-  name="primary"
+  name="Primary"
   args={{
     primary: true,
+    outlined: false,
+    label: 'Button',
+  }}
+/>
+<Story
+  name="Secondary"
+  args={{
+    primary: false,
+    outlined: false,
+    label: 'Button',
+  }}
+/>
+<Story
+  name="Outlined"
+  parameters={{
+    docs: {
+      description: {
+        story: 'Кнопка с прозрачным фоном'
+      },
+    },
+  }}
+  args={{
+    outlined: true,
+    label: 'Button',
+  }}
+   />
+<Story
+  name="Large"
+  args={{
+    size: 'large',
+    label: 'Button',
+  }}
+/>
+<Story
+  name="Small"
+  args={{
+    size: 'small',
     label: 'Button',
   }}
 />
  
-<Story
-  name="hover"
-  args={{
-    backgroundColor: '#0284C7',
-    label: 'Button',
-  }}
-/>
  
-<Story
-  name="disabled"
-  args={{
-    backgroundColor:'#0369A1',
-    label: 'Button',
-  }}
-/>
-
-

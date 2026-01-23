@@ -7,14 +7,66 @@ button2 {
   font-weight: 700;
   line-height: 1;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    &:focus-visible {
+      outline: 2px solid #3b82f6;
+      outline-offset: 2px;
+    }
+    
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none !important;
+    }
 }
+
 .button2--primary {
-  background-color:gray;
-}
+    background-color: #547EDC;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(59, 130, 246, 0.3);
+    
+    &:hover:not(:disabled) {
+      background-color: #486CBE;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 5px 0 rgba(59, 130, 246, 0.4);
+    }
+    
+    &:active:not(:disabled) {
+      transform: translateY(0);
+      box-shadow: 0 1px 2px 0 rgba(59, 130, 246, 0.3);
+    }
+  }
+
+
 .button2--secondary {
-  background-color: transparent;
-  color: white;
+  background-color: #CCD8F1;
+  color: #1D262E;
+  &:hover:not(:disabled) {
+      background-color: #B1C2E3;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 5px 0 rgba(59, 130, 246, 0.4);
+    }
+    
+    &:active:not(:disabled) {
+      transform: translateY(0);
+      box-shadow: 0 1px 2px 0 rgba(59, 130, 246, 0.3);
+    }
 }
+.button2--outlined{
+  background-color: transparent;
+    color: #1D262E;
+    border: 2px solid #CCD8F1;
+    
+    &:hover:not(:disabled) {
+      background-color: #F3F7FF;
+      border-color: #B1C2E3;
+    }
+    
+    &:active:not(:disabled) {
+      background-color: #E6EEFF;
+    }
+}
+
 .button2--small {
   padding: 10px 16px;
   font-size: 12px;
