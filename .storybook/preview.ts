@@ -1,7 +1,6 @@
 import type { Preview } from '@storybook/sveltekit';
-import 'tailwindcss';
-import '../src/lib/components/ui/button2/button2.css';
 import '../src/app.css';
+import '../src/lib/components/ui/button2/button2.css';
 import '../src/index.css';
 
 const preview: Preview = {
