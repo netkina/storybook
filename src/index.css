@@ -105,10 +105,13 @@
     box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
   }
 
-  .list-item.TASK_ARCHIVED .title input {
-    text-decoration: line-through;
-    color: #757575;
+ 
+
+  .list-item.TASK_ARCHIVED .title input[type="text"] {
+    color: #4a5568;
+ text-decoration: line-through;
   }
+
 
   /* Pin button */
   .pin-button {

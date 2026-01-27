@@ -17,7 +17,7 @@
     };
 
     const { Story } = defineMeta({
-        title: "Collapsible",
+      title: "UI Components/Collapsible",
         component: Collapsible,
         tags: ['autodocs'],
     }) 

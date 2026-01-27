@@ -18,7 +18,7 @@
 
   const { Story } = defineMeta({
     component: Task,
-    title: 'Task',
+    title: 'Example/Task',
     tags: ['autodocs'],
     excludeStories: /.*Data$/,
     args: {
