@@ -18,7 +18,7 @@
   const {items, type}: CollapsibleItems = $props();
 </script>
  
-<Collapsible.Root class="w-[327px] space-y-3" >
+<Collapsible.Root class="w-[327px] space-y-3" open={type === 'opened'} >
   
    {#each items as item (item.id)}
   <div class="flex items-center justify-between space-x-10">
