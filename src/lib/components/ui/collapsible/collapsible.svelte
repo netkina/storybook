@@ -5,7 +5,7 @@
 
   export type CollapsibleItems = {
     items: {
-      id: string,
+      
       title: string,
       content: {
         content1: string,
@@ -20,7 +20,7 @@
  
 <Collapsible.Root class="w-[327px] space-y-3" open={type === 'opened'} >
   
-   {#each items as item (item.id)}
+   {#each items as item (item.title)}
   <div class="flex items-center justify-between space-x-10">
     <h4 class="text-[15px] font-medium">{item.title}</h4>
     <Collapsible.Trigger

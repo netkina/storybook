@@ -6,7 +6,7 @@
     
   const { items }: CollapsibleItems = {
     items: [
-    { id: "item-1", title: "Title 1", 
+    { title: "Title 1", 
     content: {
       content1: "Content 1",
       content2: "Content 2",
