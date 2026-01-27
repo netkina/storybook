@@ -7,6 +7,7 @@
   import { Input } from "$lib/components/ui/input/index.js";
   import * as Card from "$lib/components/ui/card/index.js";
   import { Button } from 'bits-ui';
+  import {Collapsible} from 'bits-ui';
 </script>
 
 <svelte:head>

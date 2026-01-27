@@ -48,8 +48,6 @@
     </Accordion.Item>
   {/each}
 
-  {#if disabled}
-  <div>хуууууууууууууууй</div>
-  {/if}
+  
 </Accordion.Root>
 
