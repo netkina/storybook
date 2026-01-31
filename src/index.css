@@ -107,7 +107,7 @@
 
   .list-item.TASK_ARCHIVED .title input {
     text-decoration: line-through;
-    color: #757575;
+    color: #55003b;
   }
 
   /* Pin button */
