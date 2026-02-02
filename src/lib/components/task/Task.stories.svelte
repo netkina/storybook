@@ -1,7 +1,6 @@
 
 <script module>
   import { defineMeta } from '@storybook/addon-svelte-csf';
-
   import { fn } from 'storybook/test';
 
   import Task from './Task.svelte';
@@ -18,7 +17,7 @@
 
   const { Story } = defineMeta({
     component: Task,
-    title: 'Example/Task',
+    title: 'My Examples/Task',
     tags: ['autodocs'],
     excludeStories: /.*Data$/,
     args: {

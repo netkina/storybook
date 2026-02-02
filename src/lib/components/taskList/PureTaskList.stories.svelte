@@ -18,7 +18,7 @@ import PureTaskList from './PureTaskList.svelte';
 
   const { Story } = defineMeta({
     component: PureTaskList,
-    title: 'Example/PureTaskList',
+    title: 'My Examples/PureTaskList',
     tags: ['autodocs'],
     excludeStories: /.*Data$/,
     decorators: [() => MarginDecorator],
