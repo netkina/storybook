@@ -54,7 +54,7 @@ import type { TaskData } from './task.ts';
       name="title"
       id="title-{task.id}"
       placeholder="Input title"
-      style="background-color: red;"
+
       
     />
   </label>
