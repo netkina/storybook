@@ -24,3 +24,9 @@ vite.config.ts.timestamp-*
 
 *storybook.log
 storybook-static
+
+
+build-storybook.log
+chromatic.log
+chromatic-build-*.xml
+chromatic-diagnostics.json
