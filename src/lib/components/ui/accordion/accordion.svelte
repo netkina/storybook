@@ -34,7 +34,7 @@
           </span>
           <span
             class="hover:bg-dark-10 inline-flex size-8 items-center justify-center rounded-[7px] bg-transparent"
-          > <CaretDown class="size-[18px] transition-transform duration-200" />
+          > <CaretDown class="size-[18px] transition-transform duration-200" aria-label="arrow"/>
           </span>
         </Accordion.Trigger>
       </Accordion.Header>

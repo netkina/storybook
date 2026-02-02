@@ -2,6 +2,8 @@
 	import { defineMeta } from "@storybook/addon-svelte-csf";
     import Checkbox from "./checkbox.svelte"
   import { fn } from 'storybook/test';
+      //  import { within } from 'storybook/test';
+	//import { expect } from "vitest";
 
   // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
   const { Story } = defineMeta({
@@ -19,7 +21,11 @@
 </script>
 
 <!-- More on writing stories with args: https://storybook.js.org/docs/writing-stories/args -->
-<Story name="NotChecked" args={{ checked: false,  disabled: false, indeterminate: false  }} />
+<Story name="NotChecked" args={{ 
+  checked: false,  disabled: false, indeterminate: false  
+  }} 
+   
+  />
 
 <Story name="IsChecked" args={{ checked: true }} />
 

@@ -2,6 +2,7 @@
   import { defineMeta } from '@storybook/addon-svelte-csf';
   import Button2 from './button2.svelte';
   import { fn } from 'storybook/test';
+  import { within } from 'storybook/test';
 
   const { Story } = defineMeta({
     title: 'My Examples/Button2',
@@ -27,6 +28,7 @@
     outlined: false,
     label: 'Button',
   }}
+
 />
 <Story
   name="Secondary"
